@@ -1,0 +1,39 @@
+version: '3.4'
+
+networks:
+    dev:
+        driver: bridge
+
+services:
+    webapi:
+        image: ${DOCKER_REGISTRY-}webapi
+        build:
+            context: "webapi/"
+            dockerfile: Dockerfile
+        ports:
+            - 8080:80
+    vueapp:
+        image: ${DOCKER_REGISTRY-}vueapp
+        build:
+            context: "vueapp/"
+            dockerfile: Dockerfile
+        env_file:
+            - "./vueapp/.env"
+        ports:
+            - 80:80
+        restart: unless-stopped
+        depends_on:
+            - webapi
+        networks:
+            - dev
+    postgres:
+        image: postgres
+        restart: always
+        environment:
+            POSTGRES_USER: dondi
+            POSTGRES_PASSWORD: YSGTRKWRPPKMKGPS
+            POSTGRES_DB: DondiGames
+        ports:
+            - 5433:5432
+        networks:
+            - dev

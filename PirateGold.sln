@@ -1,0 +1,70 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "webapi", "webapi\webapi.csproj", "{7E4E108B-52C4-40B3-94AA-1EEBA9532BB3}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{38586832-15E0-445F-9110-D772EB946639}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "vueapp", "vueapp", "{4CED0FA0-5E78-48B1-A8B5-4787C8675210}"
+	ProjectSection(SolutionItems) = preProject
+		vueapp\.browserslistrc = vueapp\.browserslistrc
+		vueapp\.dockerignore = vueapp\.dockerignore
+		vueapp\.env = vueapp\.env
+		vueapp\.eslintrc.js = vueapp\.eslintrc.js
+		vueapp\.gitignore = vueapp\.gitignore
+		vueapp\.npmrc = vueapp\.npmrc
+		vueapp\babel.config.js = vueapp\babel.config.js
+		vueapp\Dockerfile = vueapp\Dockerfile
+		vueapp\jsconfig.json = vueapp\jsconfig.json
+		vueapp\nginx.conf = vueapp\nginx.conf
+		vueapp\package.json = vueapp\package.json
+		vueapp\pnpm-lock.yaml = vueapp\pnpm-lock.yaml
+		vueapp\README.md = vueapp\README.md
+		vueapp\vue.config.js = vueapp\vue.config.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{42C6EB56-03AF-4B0D-A659-429C02A2A195}"
+	ProjectSection(SolutionItems) = preProject
+		vueapp\src\App.vue = vueapp\src\App.vue
+		vueapp\src\main.js = vueapp\src\main.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "assets", "assets", "{852484F4-7AE1-4F8A-A9ED-ED4F05002530}"
+	ProjectSection(SolutionItems) = preProject
+		vueapp\src\assets\logo.png = vueapp\src\assets\logo.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "components", "components", "{4403FAAA-E364-43C5-A410-B70AF8272067}"
+	ProjectSection(SolutionItems) = preProject
+		vueapp\src\components\HelloWorld.vue = vueapp\src\components\HelloWorld.vue
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7E4E108B-52C4-40B3-94AA-1EEBA9532BB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E4E108B-52C4-40B3-94AA-1EEBA9532BB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E4E108B-52C4-40B3-94AA-1EEBA9532BB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E4E108B-52C4-40B3-94AA-1EEBA9532BB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38586832-15E0-445F-9110-D772EB946639}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38586832-15E0-445F-9110-D772EB946639}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38586832-15E0-445F-9110-D772EB946639}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38586832-15E0-445F-9110-D772EB946639}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{42C6EB56-03AF-4B0D-A659-429C02A2A195} = {4CED0FA0-5E78-48B1-A8B5-4787C8675210}
+		{852484F4-7AE1-4F8A-A9ED-ED4F05002530} = {42C6EB56-03AF-4B0D-A659-429C02A2A195}
+		{4403FAAA-E364-43C5-A410-B70AF8272067} = {42C6EB56-03AF-4B0D-A659-429C02A2A195}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1607BFF3-9F23-43DE-A6FE-A4DAB2C3BE2E}
+	EndGlobalSection
+EndGlobal
